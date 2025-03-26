@@ -1,9 +1,10 @@
-import Image from "next/image";
-
+import Popup from "./components/Popup";
 export default function Home() {
   return (
     <div>
-      <main></main>
+      <main>
+        <Popup />
+      </main>
       <footer></footer>
     </div>
   );
