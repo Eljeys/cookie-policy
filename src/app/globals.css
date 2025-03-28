@@ -50,18 +50,18 @@ header {
   font-weight: bold;
 }
 
-.button-wrapper {
-  border: solid green;
-  height: auto;
+footer {
+  border: solid red;
+}
+button {
+  display: flex;
+  justify-content: center;
   color: black;
   background-color: white;
   border-radius: 0.5rem;
-  padding-block: 0.5rem;
+  padding-block: 1rem;
   margin-block-start: 1rem;
   text-align: center;
-}
-footer {
-  border: solid red;
 }
 
 svg {
