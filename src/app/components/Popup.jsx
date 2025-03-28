@@ -1,16 +1,23 @@
 "use client";
+import { useState } from "react";
 import { FaCookieBite } from "react-icons/fa";
 const Popup = () => {
+  const [cookiesAccepted, setCookiesAccepted] = useState(false);
+  console.log(cookiesAccepted);
   return (
-    <section className="card">
-      <div>
-        <div>
-          <FaCookieBite />
-        </div>
+    !cookiesAccepted && (
+      <section className="card">
+        <header>
+          <FaCookieBite size={45} />
+        </header>
         <p>We use cookies to improve your user experience</p>
-      </div>
-      <button>I like Cookies</button>
-    </section>
+        <footer className="button-wrapper">
+          <button onClick={() => setCookiesAccepted(!cookiesAccepted)}>
+            I like Cookies
+          </button>
+        </footer>
+      </section>
+    )
   );
 };
 

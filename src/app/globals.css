@@ -30,28 +30,38 @@ body {
   align-items: end;
 }
 
+header {
+  border: solid red;
+}
+
 .card {
   background-color: var(--foreground);
   display: flex;
   flex-direction: column;
-  justify-content: end;
   max-width: 350px;
   height: 500px;
   padding-inline: 1.5rem;
   padding-block: 2rem;
 }
 .card p {
+  border: solid orange;
   text-wrap: balance;
   color: white;
   font-weight: bold;
 }
 
-.card button {
+.button-wrapper {
+  border: solid green;
+  height: auto;
   color: black;
   background-color: white;
   border-radius: 0.5rem;
   padding-block: 0.5rem;
   margin-block-start: 1rem;
+  text-align: center;
+}
+footer {
+  border: solid red;
 }
 
 svg {
